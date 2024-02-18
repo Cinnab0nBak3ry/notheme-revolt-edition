@@ -1,0 +1,394 @@
+@-moz-document domain("revolt.chat") {
+    /* ==UserStyle==
+    @name         notheme: revolting edition
+    @description  a revolt theme inspired by... nothing at all, except my discord theme just like this one
+    @author       vozercozer
+    @namespace    https://github.com/Cinnab0nBak3ry/notheme-revolt-edition
+    @version      1.0.0
+    ==/UserStyle== */
+
+
+
+/*
+69 74 73  61  74 68 65 6D 65  69 6E 73 70 69 72 65 64  62 79  6E 6F 74 68 69 6E 67 
+                                                                                           
+                                  88                                                       
+                           ,d     88                                                       
+                           88     88                                                       
+8b,dPPYba,    ,adPPYba,  MM88MMM  88,dPPYba,    ,adPPYba,  88,dPYba,,adPYba,    ,adPPYba,  
+88P'   `"8a  a8"     "8a   88     88P'    "8a  a8P_____88  88P'   "88"    "8a  a8P_____88  
+88       88  8b       d8   88     88       88  8PP"""""""  88      88      88  8PP"""""""  
+88       88  "8a,   ,a8"   88,    88       88  "8b,   ,aa  88      88      88  "8b,   ,aa  
+88       88   `"YbbdP"'    "Y888  88       88   `"Ybbd8"'  88      88      88   `"Ybbd8"'  
+
+                                                                     
+                                     ,--.  ,--.  ,--.                
+.--.    ,--.--. ,---.,--.  ,--.,---. |  |,-'  '-.`--',--,--,  ,---.  
+'--'    |  .--'| .-. :\  `'  /| .-. ||  |'-.  .-',--.|      \| .-. | 
+.--.    |  |   \   --. \    / ' '-' '|  |  |  |  |  ||  ||  |' '-' ' 
+'--'    `--'    `----'  `--'   `---' `--'  `--'  `--'`--''--'.`-  /  
+          ,--.,--.  ,--.  ,--.                               `---'   
+ ,---.  ,-|  |`--',-'  '-.`--' ,---. ,--,--,                         
+| .-. :' .-. |,--.'-.  .-',--.| .-. ||      \                        
+\   --.\ `-' ||  |  |  |  |  |' '-' '|  ||  |                        
+ `----' `---' `--'  `--'  `--' `---' `--''--'                        
+                                                                     
+                                                                     
+                                                                     
+                                                                                           
+                                                                                           
+77 68 79  61 72 65  79 6F 75  74 72 61 6E 73 6C 61 74 65  74 68 69 73 2C  74 68 65 72 65 73  6E 6F 74 68 69 6E 67  68 65 72 65 
+*/
+
+/* fonts */
+
+@font-face {
+    font-family: "Nintendo DS BIOS Regular";
+    src: url("https://db.onlinewebfonts.com/t/1888b71aa651100801cb2e473433f5ec.eot");
+    src: url("https://db.onlinewebfonts.com/t/1888b71aa651100801cb2e473433f5ec.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1888b71aa651100801cb2e473433f5ec.woff2")format("woff2"),
+}
+
+:root {
+    --font: Nintendo DS BIOS Regular !important;
+}
+
+* {
+    font-size: 20px;
+    border-radius: 1px !important;
+}
+
+
+/*
+        _                                                   _            
+       | |                                        |        | |    o      
+    _  | |  _   __,   ,   _     ,_    _   __,   __|    _|_ | |        ,  
+  |/ \_|/  |/  /  |  / \_|/    /  |  |/  /  |  /  |     |  |/ \   |  / \_
+  |__/ |__/|__/\_/|_/ \/ |__/     |_/|__/\_/|_/\_/|_/   |_/|   |_/|_/ \/ 
+ /|                                                                      
+ \|                                                                      
+                                                                   
+-----------------------* instructions *----------------------------
+-
+- * replacing the background image is quite simple
+-   > upload your desired image to an image hosting service, like catbox or imgur
+-   > replace the url bellow with a link to that image
+-   > optionally, you can change the background and accent colors + their opacity by messing with the varriables bellow
+*/
+body {
+    background-image: url("https://files.catbox.moe/4jk6at.jpg");
+    /* replace this url with one that points to your desired background image */
+    background-size: cover;
+}
+
+/*
+
+the following is ripped straight out of the god damned css from the site itself. LMAO. LMAOOOO. i just changed what i had to and didnt remove what i didnt change. isnt that fucking LAZY??? LMAOOOOOOOOOOOOOO
+
+*/
+
+:root {
+    --accent: #1e00ff;
+    --accent-rgb: 253, 102, 113;
+    --background: #19191994 !important;
+    --background-rgb: 25, 25, 25;
+    --foreground: #F6F6F6;
+    --foreground-rgb: 246, 246, 246;
+    --block: #2D2D2D;
+    --block-rgb: 45, 45, 45;
+    --message-box: #000;
+    --message-box-rgb: 54, 54, 54;
+    --mention: rgba(251, 255, 0, 0.06);
+    --mention-rgb: 251, 255, 0;
+    --success: #65E572;
+    --success-rgb: 101, 229, 114;
+    --warning: #FAA352;
+    --warning-rgb: 250, 163, 82;
+    --tooltip: #000000;
+    --tooltip-rgb: 0, 0, 0;
+    --error: #F06464;
+    --error-rgb: 240, 100, 100;
+    --hover: rgba(0, 0, 0, 0.1);
+    --hover-rgb: 0, 0, 0;
+    --scrollbar-thumb: #ca525a00;
+    --scrollbar-thumb-rgb: 202, 82, 90;
+    --scrollbar-track: transparent;
+    --scrollbar-track-rgb: 0, 0, 0;
+    --primary-background: #000000d1;
+    --primary-background-rgb: 36, 36, 36;
+    --primary-header: #363636;
+    --primary-header-rgb: 54, 54, 54;
+    --secondary-background: #000;
+    --secondary-background-rgb: 30, 30, 30;
+    --secondary-foreground: #C8C8C8;
+    --secondary-foreground-rgb: 200, 200, 200;
+    --secondary-header: #2D2D2D;
+    --secondary-header-rgb: 45, 45, 45;
+    --tertiary-background: #4D4D4D;
+    --tertiary-background-rgb: 77, 77, 77;
+    --tertiary-foreground: #848484;
+    --tertiary-foreground-rgb: 132, 132, 132;
+    --status-online: #3ABF7E;
+    --status-online-rgb: 58, 191, 126;
+    --status-away: #F39F00;
+    --status-away-rgb: 243, 159, 0;
+    --status-focus: #4799F0;
+    --status-focus-rgb: 71, 153, 240;
+    --status-busy: #F84848;
+    --status-busy-rgb: 248, 72, 72;
+    --status-streaming: #977EFF;
+    --status-streaming-rgb: 151, 126, 255;
+    --status-invisible: #A5A5A5;
+    --status-invisible-rgb: 165, 165, 165;
+    --sidebar-sidebar-active: #202225;
+    --sidebar-sidebar-active-rgb: 32, 34, 37;
+    --border-color: #20252C;
+    --border-color-rgb: 32, 37, 44;
+    --primary-foreground: #0E1116;
+    --primary-foreground-rgb: 14, 17, 22;
+    --status-tags-0: pastel;
+    --status-tags-0-rgb: undefined, undefined, undefined;
+    --status-tags-1: green;
+    --status-tags-1-rgb: 0, 128, 0;
+    --status-version: 0.0.1;
+    --status-version-rgb: undefined, undefined, undefined;
+    --status-border-color: #1F1F24;
+    --status-border-color-rgb: 31, 31, 36;
+    --status-font: Roboto;
+    --status-font-rgb: undefined, undefined, undefined;
+    --status-monospaceFont: Fira Code;
+    --status-monospaceFont-rgb: undefined, undefined, undefined;
+    --light: false;
+    --light-rgb: 0, 0, 0;
+    --accent-contrast: white;
+    --accent-contrast-rgb: 255, 255, 255;
+    --background-contrast: white;
+    --background-contrast-rgb: 255, 255, 255;
+    --foreground-contrast: black;
+    --foreground-contrast-rgb: 0, 0, 0;
+    --block-contrast: white;
+    --block-contrast-rgb: 255, 255, 255;
+    --message-box-contrast: white;
+    --message-box-contrast-rgb: 255, 255, 255;
+    --mention-contrast: black;
+    --mention-contrast-rgb: 0, 0, 0;
+    --success-contrast: black;
+    --success-contrast-rgb: 0, 0, 0;
+    --warning-contrast: black;
+    --warning-contrast-rgb: 0, 0, 0;
+    --tooltip-contrast: white;
+    --tooltip-contrast-rgb: 255, 255, 255;
+    --error-contrast: white;
+    --error-contrast-rgb: 255, 255, 255;
+    --hover-contrast: white;
+    --hover-contrast-rgb: 255, 255, 255;
+    --scrollbar-thumb-contrast: white;
+    --scrollbar-thumb-contrast-rgb: 255, 255, 255;
+    --scrollbar-track-contrast: white;
+    --scrollbar-track-contrast-rgb: 255, 255, 255;
+    --primary-background-contrast: white;
+    --primary-background-contrast-rgb: 255, 255, 255;
+    --primary-header-contrast: white;
+    --primary-header-contrast-rgb: 255, 255, 255;
+    --secondary-background-contrast: white;
+    --secondary-background-contrast-rgb: 255, 255, 255;
+    --secondary-foreground-contrast: black;
+    --secondary-foreground-contrast-rgb: 0, 0, 0;
+    --secondary-header-contrast: white;
+    --secondary-header-contrast-rgb: 255, 255, 255;
+    --tertiary-background-contrast: white;
+    --tertiary-background-contrast-rgb: 255, 255, 255;
+    --tertiary-foreground-contrast: white;
+    --tertiary-foreground-contrast-rgb: 255, 255, 255;
+    --status-online-contrast: white;
+    --status-online-contrast-rgb: 255, 255, 255;
+    --status-away-contrast: black;
+    --status-away-contrast-rgb: 0, 0, 0;
+    --status-focus-contrast: white;
+    --status-focus-contrast-rgb: 255, 255, 255;
+    --status-busy-contrast: white;
+    --status-busy-contrast-rgb: 255, 255, 255;
+    --status-streaming-contrast: white;
+    --status-streaming-contrast-rgb: 255, 255, 255;
+    --status-invisible-contrast: white;
+    --status-invisible-contrast-rgb: 255, 255, 255;
+    --sidebar-sidebar-active-contrast: white;
+    --sidebar-sidebar-active-contrast-rgb: 255, 255, 255;
+    --border-color-contrast: white;
+    --border-color-contrast-rgb: 255, 255, 255;
+    --primary-foreground-contrast: white;
+    --primary-foreground-contrast-rgb: 255, 255, 255;
+    --status-tags-0-contrast: white;
+    --status-tags-0-contrast-rgb: 255, 255, 255;
+    --status-tags-1-contrast: white;
+    --status-tags-1-contrast-rgb: 255, 255, 255;
+    --status-version-contrast: white;
+    --status-version-contrast-rgb: 255, 255, 255;
+    --status-border-color-contrast: white;
+    --status-border-color-contrast-rgb: 255, 255, 255;
+    --status-font-contrast: white;
+    --status-font-contrast-rgb: 255, 255, 255;
+    --status-monospaceFont-contrast: white;
+    --status-monospaceFont-contrast-rgb: 255, 255, 255;
+    --min-opacity: 0;
+    --min-opacity-rgb: 0, 0, 0;
+    --header-height: 48px;
+    --header-height-rgb: undefined, undefined, undefined;
+    --effective-bottom-offset: 0px;
+    --effective-bottom-offset-rgb: undefined, undefined, undefined;
+}
+
+/*
+
+.__.__  .__                                      .__                  __  .__                   
+|__|  | |  |      ___________  _________    ____ |__|_______ ____   _/  |_|  |__   ____         
+|  |  | |  |     /  _ \_  __ \/ ___\__  \  /    \|  \___   // __ \  \   __\  |  \_/ __ \        
+|  |  |_|  |__  (  <_> )  | \/ /_/  > __ \|   |  \  |/    /\  ___/   |  | |   Y  \  ___/        
+|__|____/____/   \____/|__|  \___  (____  /___|  /__/_____ \\___  >  |__| |___|  /\___  >       
+                            /_____/     \/     \/         \/    \/             \/     \/        
+                         __            .__                    .__                         __    
+_______   ____   _______/  |_  __  _  _|  |__   ____   ____   |__| _____     ____   _____/  |_  
+\_  __ \_/ __ \ /  ___/\   __\ \ \/ \/ /  |  \_/ __ \ /    \  |  |/     \   /    \ /  _ \   __\ 
+ |  | \/\  ___/ \___ \  |  |    \     /|   Y  \  ___/|   |  \ |  |  Y Y  \ |   |  (  <_> )  |   
+ |__|    \___  >____  > |__|     \/\_/ |___|  /\___  >___|  / |__|__|_|  / |___|  /\____/|__|   
+             \/     \/                      \/     \/     \/           \/       \/              
+________ __________ ____ __________   ____  __.                        .__    .__  __           
+\______ \\______   \    |   \      \ |    |/ _| _____    ______   _____|  |__ |__|/  |_         
+ |    |  \|       _/    |   /   |   \|      <   \__  \  /  ___/  /  ___/  |  \|  \   __\        
+ |    `   \    |   \    |  /    |    \    |  \   / __ \_\___ \   \___ \|   Y  \  ||  |          
+/_______  /____|_  /______/\____|__  /____|__ \ (____  /____  > /____  >___|  /__||__|          
+        \/       \/                \/        \/      \/     \/       \/     \/                  
+
+*/
+
+[class="Base-sc-yb16g4-0 iDeTmr"] {
+    background-color: black;
+    backdrop-filter: blur(0px) !important;
+}
+
+.JkpVA {
+    background: #000;
+    backdrop-filter: blur(0px) !important;
+}
+
+.jyizw {
+    background: #000;
+    backdrop-filter: blur(0px) !important;
+}
+
+.cJgFyc {
+    backdrop-filter: blur(0px) !important;
+}
+
+.dUCGFk {
+    height: 97%;
+    background: black !important;
+    backdrop-filter: blur(0px) !important;
+}
+
+
+
+[class="SidebarBase__GenericSidebarBase-sc-1dma6vq-1 dUCGFk"] {
+    background-color: black;
+    border-left: double rgba(124, 124, 124, 1);
+    backdrop-filter: blur(0px) !important;
+}
+
+[class="SidebarBase-sc-1dma6vq-0 jyizw"] {
+    background-color: black;
+    border-right: grey double 5px;
+}
+
+[class="jyizw"] {
+    border: double rgba(124, 124, 124, 1);
+}
+
+[class="Header-sc-ujh2d9-0 fPzJRX"] {
+    background-color: black;
+    border-bottom: double rgba(124, 124, 124, 1);
+    backdrop-filter: blur(0px) !important;
+}
+
+[class="Header-sc-ujh2d9-0 fEKFaQ"] {
+    background-color: black;
+    border-bottom: double rgba(124, 124, 124, 1);
+    backdrop-filter: blur(0px) !important;
+}
+
+[class="MessageBox__Base-sc-jul4fa-0 jBEnry"] {
+    border: double rgba(124, 124, 124, 1);
+    backdrop-filter: blur(0px) !important;
+    margin: 10px;
+}
+
+[class="Shadow-sc-yb16g4-1 bSmCBu"] {
+    display: none;
+}
+
+.jBEnry textarea {
+    font-size: 18px !important;
+}
+
+.preact-context-menu .context-menu {
+    background-color: black;
+    border: double rgba(124, 124, 124, 1);
+}
+
+[class="ServerHeader__ServerBanner-sc-15ursl9-0 dKFhRZ"] {
+    margin: 10px;
+    border: double rgba(124, 124, 124, 1) 5px;
+}
+
+}
+
+@-moz-document domain("revolt.chat") {
+/* ---------- https://pixelarticons.com/ - SEE LICENSE HERE : https://github.com/halfmage/pixelarticons ----------- */
+
+[d="M9.5 12c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm1.5 1H8c-3.309 0-6 2.691-6 6v1h15v-1c0-3.309-2.691-6-6-6z"],
+[d="M16.604 11.048a5.67 5.67 0 0 0 .751-3.44c-.179-1.784-1.175-3.361-2.803-4.44l-1.105 1.666c1.119.742 1.8 1.799 1.918 2.974a3.693 3.693 0 0 1-1.072 2.986l-1.192 1.192 1.618.475C18.951 13.701 19 17.957 19 18h2c0-1.789-.956-5.285-4.396-6.952z"] {
+    d: path("M10 3H8v2H6v2h2V5h2v2h2v2h-2v2H8v2H6v2H4v-2H2v2h2v2h2v-2h4v2h2v2h-2v2h2v-2h2v-2h-2v-4h2v-2h2v2h2v2h2v-2h2v-2h-2v2h-2v-2h-2V9h2V5h-4v2h-2V5h-2V3z ");
+    transform: scale(1);
+    color: #f00
+}
+
+[d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"] {
+    d: path("M18 2h-2v2h2V2zM4 4h6v2H4v14h14v-6h2v8H2V4h2zm4 8H6v6h6v-2h2v-2h-2v2H8v-4zm4-2h-2v2H8v-2h2V8h2V6h2v2h-2v2zm2-6h2v2h-2V4zm4 0h2v2h2v2h-2v2h-2v2h-2v-2h2V8h2V6h-2V4zm-4 8h2v2h-2v-2z");
+    transform: scale(1);
+    fill: rgb(221, 255, 0);
+}
+
+[d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm3 13-8 2 2-8 8-2-2 8z"] {
+    d: path("M19 2h2v2h-2V2Zm2 14V4h2v12h-2Zm0 0v2h-2v-2h2ZM1 4h2v12H1V4Zm2 12h2v2H3v-2ZM3 4h2V2H3v2Zm2 2h2v8H5V6Zm2 8h2v2H7v-2Zm0-8h2V4H7v2Zm10 0h2v8h-2V6Zm0 0h-2V4h2v2Zm0 8v2h-2v-2h2Zm-6-7h4v6h-2v9h-2v-9H9V7h2Zm0 4h2V9h-2v2Z");
+    transform: scale(1);
+    fill: rgb(0, 180, 6);
+}
+
+[d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"] {
+    d: path("M6 2h8v2H6V2zM4 6V4h2v2H4zm0 8H2V6h2v8zm2 2H4v-2h2v2zm8 0v2H6v-2h8zm2-2h-2v2h2v2h2v2h2v2h2v-2h-2v-2h-2v-2h-2v-2zm0-8h2v8h-2V6zm0 0V4h-2v2h2z");
+    transform: scale(1);
+    fill: cyan;
+}
+
+[d="m2.344 15.271 2 3.46a1 1 0 0 0 1.366.365l1.396-.806c.58.457 1.221.832 1.895 1.112V21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1.598a8.094 8.094 0 0 0 1.895-1.112l1.396.806c.477.275 1.091.11 1.366-.365l2-3.46a1.004 1.004 0 0 0-.365-1.366l-1.372-.793a7.683 7.683 0 0 0-.002-2.224l1.372-.793c.476-.275.641-.89.365-1.366l-2-3.46a1 1 0 0 0-1.366-.365l-1.396.806A8.034 8.034 0 0 0 15 4.598V3a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v1.598A8.094 8.094 0 0 0 7.105 5.71L5.71 4.904a.999.999 0 0 0-1.366.365l-2 3.46a1.004 1.004 0 0 0 .365 1.366l1.372.793a7.683 7.683 0 0 0 0 2.224l-1.372.793c-.476.275-.641.89-.365 1.366zM12 8c2.206 0 4 1.794 4 4s-1.794 4-4 4-4-1.794-4-4 1.794-4 4-4z"] {
+    d: path("M4 2H2v8h2V2zm16 0h2v8h-2V2zm-6 6h-4V2H4v2h4v4H4v2h4v4H4v2h4v4H4v2h6v-6h4v6h2v-6h4v-2h-4v-4h4V8h-4V2h-2v6zm-4 6v-4h4v4h-4zM20 2h-4v2h4V2zM2 14h2v8H2v-8zm14 6h4v2h-4v-2zm6-6h-2v8h2v-8z");
+    transform: scale(1);
+    fill: rgb(0, 115, 255);
+}
+
+[d="M13 8c2.103 0 3 .897 3 3h2c0-3.225-1.775-5-5-5v2zm3.422 5.443a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a1 1 0 0 0-.086-1.391l-4.064-3.696z"],
+[d="M20 10.999h2C22 5.869 18.127 2 12.99 2v2C17.052 4 20 6.943 20 10.999z"] {
+    d: path("M6 3h12v18H6V3zm10 16V5h-2v2h-4V5H8v14h8zm-5-4h2v2h-2v-2z");
+    transform: scale(1);
+    fill: #1f0;
+}
+
+[d="M16.018 3.815 15.232 8h-4.966l.716-3.815-1.964-.37L8.232 8H4v2h3.857l-.751 4H3v2h3.731l-.714 3.805 1.965.369L8.766 16h4.966l-.714 3.805 1.965.369.783-4.174H20v-2h-3.859l.751-4H21V8h-3.733l.716-3.815-1.965-.37zM14.106 14H9.141l.751-4h4.966l-.752 4z"] {
+    d: path("M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2");
+    transform: scale(1);
+}
+
+
+div.HeightPreservingContainer-sc-2lkyp5-0:nth-child(8) > a:nth-child(2) > div:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > foreignObject:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > circle:nth-child(2) {
+    display: none;
+}
+}
