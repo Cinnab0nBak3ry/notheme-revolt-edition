@@ -44,13 +44,12 @@
 
 @font-face {
     font-family: "Nintendo DS BIOS Regular";
-    src: url("https://db.onlinewebfonts.com/t/1888b71aa651100801cb2e473433f5ec.eot");
     src: url("https://db.onlinewebfonts.com/t/1888b71aa651100801cb2e473433f5ec.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/1888b71aa651100801cb2e473433f5ec.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1888b71aa651100801cb2e473433f5ec.woff2")format("woff2")
 }
 
 :root {
-    --font: Nintendo DS BIOS Regular !important;
+    --font: "Nintendo DS BIOS Regular" !important;
 }
 
 * {
@@ -116,7 +115,7 @@ the following is ripped straight out of the god damned css from the site itself.
     --scrollbar-track-rgb: 0, 0, 0;
     --primary-background: #000000d1;
     --primary-background-rgb: 36, 36, 36;
-    --primary-header: #363636;
+    --primary-header: #00000085;
     --primary-header-rgb: 54, 54, 54;
     --secondary-background: #000;
     --secondary-background-rgb: 30, 30, 30;
